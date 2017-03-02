@@ -1,7 +1,7 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Volodymyr Bilokur](https://up.htmlacademy.ru/adaptive/10/user/28642).
-* Наставник: `Неизвестно`.
+* Наставник: [ Никита Рогатнев ].
 
 ---
 
