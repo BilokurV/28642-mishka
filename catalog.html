@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="visually-hidden">Магазин "Мишка"</h1>
+      <div class="page-header__logo">
+        <a href="index.html"><img src="http://placehold.it/86x35" alt="Logotype"></a>
+      </div>
+      <button class="main-menu__toggle" type="button">Open menu</button>
+      <nav class="main-menu  main-menu--closed">
+        <div class="main-menu__wrapper">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-menu__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-menu__item  main-menu__item--search"><a href="#">Поиск по сайту</a></li>
+            <li class="main-menu__item  main-menu__item--basket"><a href="#">Корзина: <span class="main-menu__item--basket-text">пока пуста</span></a></li>
+          </ul>
+        </div>
+      </nav>    
+    </header>
+    
+    <main>
+      <h1 class="page-title">Каталог товаров</h1>
+      <section class="catalog">
+          <article class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Rabbit photo">
+            </a>
+            <a href="#">
+              <h1 class="catalog__item-name">Зайчик-попрыгайчик</h1>
+            </a>
+            <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
+            <span class="catalog__item-price">1 200 руб.</span>
+            <a class="catalog__item-btn" href="#">buy me</a>
+          </article>
+          
+          <article class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Basket photo">
+            </a>
+            <a href="#">
+              <h1 class="catalog__item-name">Корзинка для белья</h1>
+            </a>
+            <span class="catalog__item-description">Диаметр 15 см, высота 10 см</span>
+            <span class="catalog__item-price">690 руб.</span>
+            <a class="catalog__item-btn" href="#">buy me</a>
+          </article>
+          
+          <article class="catalog__item">
+            <a href="#">
+              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Toy basket photo">
+            </a>
+            <a href="#">
+              <h1 class="catalog__item-name">Большая корзинка для игрушек</h1>
+            </a>
+            <span class="catalog__item-description">Диаметр 30 см, высота 30 см</span>
+            <span class="catalog__item-price">1 500 руб.</span>
+            <a class="catalog__item-btn" href="#">buy me</a>
+          </article>
+      </section>
+      
+      <section class="making">
+        <h2 class="making__name">Процесс производства</h2>
+        <div class="making__video">
+          <img src="http://placehold.it/260x150" alt="Video file of making">
+        </div>
+        <p class="making_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="making__btn btn" href="#">Сделать заказ</a>
+      </section>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="social">
+        <a class="social__link social__link--inst" href="#"></a>
+        <a class="social__link social__link--face" href="#"></a>
+        <a class="social__link social__link--twit" href="#"></a>
+      </div>
+      <p class="page-footer__copyright">Разработано:
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </p>      
+    </footer>
+    
+    <section class="popup add">
+      <h2 class="add__title">Добавить в корзину</h2>
+      <form class="add__size" method="get" action="https://echo.htmlacademy.ru/">
+        <p class="add__size-text">Выберите размер:</p>
+        <input class="add__input" type="radio" name="size" value="size-s" id="size-s" checked>
+        <label class="add__label" for="size-s">S</label>
+        <input class="add__input" type="radio" name="size" value="size-m" id="size-m">
+        <label class="add__label" for="size-m">M</label>
+        <input class="add__input" type="radio" name="size" value="size-l" id="size-l">
+        <label class="add__label" for="size-l">L</label>
+        
+        <input class="add_btn btn" type="submit" value="Добавить">
+      </form>
+      
+    </section>
+    
+  </body>
+</html>
