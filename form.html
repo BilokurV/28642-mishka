@@ -3,43 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telefone=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page-header.css">
   </head>
   <body>
     <header class="page-header">
-      <h1 class="visually-hidden">Гамазин "Мишка"</h1>
+      <h1 class="visually-hidden">Магазин "Мишка"</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/86x35" alt="Logotype"></a>
+        <a href="index.html"><img src="img/logo-mobile.svg" alt="Logotype"></a>
       </div>
-      <button class="main-menu__toggle" type="button">Open menu</button>
       <nav class="main-menu  main-menu--closed">
+        <button class="main-menu__toggle" type="button">Open menu</button>
         <div class="main-menu__wrapper">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-menu__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-menu__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="main-menu__item"><a>Вязание на заказ</a></li>
             <li class="main-menu__item  main-menu__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-menu__item  main-menu__item--basket"><a href="#">Корзина: <span class="main-menu__item--basket-text">пока пуста</span></a></li>
           </ul>
         </div>
-      </nav>    
+      </nav>
     </header>
     
     <main>
       <h1 class="page-title">Вязание на заказ</h1>
+      <div class="wraper">
       <section class="order">
-        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <span class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</span>
         <form class="form" method="get" action="https://echo.htmlacademy.ru/">
           <div class="form__type">
-            <span class="form__text">ТИП</span>
+            <p class="form__text">ТИП</p>
             
             <input class="form__type-input" type="radio" name="type" value="interior" id="interior" checked>
             <label class="form__type-label" for="interior">Аксессуар для интерьера</label>
             
             <input class="form__type-input" type="radio" name="type" value="toy" id="toy" >
-            <label class="form__type-label" for="toy">Аксессуар для интерьера</label>
+            <label class="form__type-label" for="toy">Детская игрушка</label>
           </div>
           
           <div class="form__color">
-            <span class="form__text">Цвет</span>
+            <p class="form__text">Цвет</p>
             
             <input class="form__color-input" type="checkbox" name="white" id="white" checked>
             <label class="form__color-label" for="white">Белый</label>
@@ -61,7 +66,7 @@
           </div>
   
           <div class="form__name">
-            <span class="form__text">ФИО</span>
+            <p class="form__text">ФИО</p>
             <label class="form__name-label" for="name">Имя:</label>
             <input class="form__name-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
             
@@ -73,7 +78,7 @@
           </div>
           
           <div class="form__tel">
-            <span class="form__text">тел</span>
+            <p class="form__text">тел</p>
             <input class="form__tel-input" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
           </div>
           
@@ -84,7 +89,7 @@
           
           <div class="form__addition">
             <span class="form__text">Доп</span>
-            <textarea class="form__addition-input">Опишите все ваши пожелания к заказу</textarea>
+            <textarea class="form__addition-input" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           
           <span class="form__text-required"><sup>*</sup>Поля обязательны для заполнения</span>
@@ -92,6 +97,7 @@
           <input class="form__btn btn" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
         </form>
       </section>
+      </div>
     </main>
     
     <footer class="page-footer">
@@ -116,10 +122,12 @@
         <input class="add__input" type="radio" name="size" value="size-l" id="size-l">
         <label class="add__label" for="size-l">L</label>
         
-        <input class="add_btn btn" type="submit" value="Добавить">
+        <input class="add__btn btn" type="submit" value="Добавить">
       </form>
       
     </section>
-    
+
+
+    <script src="js/script.js"></script>
   </body>
 </html>
