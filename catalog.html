@@ -3,35 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telefone=no">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <h1 class="visually-hidden">Магазин "Мишка"</h1>
       <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/86x35" alt="Logotype"></a>
+        <a href="index.html"><img src="img/logo-mobile.svg" alt="Logotype"></a>
       </div>
-      <button class="main-menu__toggle" type="button">Open menu</button>
       <nav class="main-menu  main-menu--closed">
+        <button class="main-menu__toggle" type="button">Open menu</button>
         <div class="main-menu__wrapper">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-menu__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-menu__item"><a>Каталог товаров</a></li>
+            <li class="main-menu__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-menu__item  main-menu__item--search"><a href="#">Поиск по сайту</a></li>
             <li class="main-menu__item  main-menu__item--basket"><a href="#">Корзина: <span class="main-menu__item--basket-text">пока пуста</span></a></li>
           </ul>
         </div>
-      </nav>    
+      </nav>   
     </header>
     
     <main>
       <h1 class="page-title">Каталог товаров</h1>
-      <section class="catalog">
+      <div class="wraper">
+        <section class="catalog">
           <article class="catalog__item">
             <a href="#">
-              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Rabbit photo">
+              <img class="catalog__item-pic" src="img/photo-1-mobile@1x.jpg" alt="Rabbit photo">
             </a>
             <a href="#">
-              <h1 class="catalog__item-name">Зайчик-попрыгайчик</h1>
+              <h3 class="catalog__item-name">Зайчик-попрыгайчик</h3>
             </a>
             <span class="catalog__item-description">Рост 30 см, вес 200 г</span>
             <span class="catalog__item-price">1 200 руб.</span>
@@ -40,7 +44,7 @@
           
           <article class="catalog__item">
             <a href="#">
-              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Basket photo">
+              <img class="catalog__item-pic" src="img/photo-2-mobile@1x.jpg" alt="Basket photo">
             </a>
             <a href="#">
               <h1 class="catalog__item-name">Корзинка для белья</h1>
@@ -52,7 +56,7 @@
           
           <article class="catalog__item">
             <a href="#">
-              <img class="catalog__item-pic" src="http://placehold.it/260x195" alt="Toy basket photo">
+              <img class="catalog__item-pic" src="img/photo-3-mobile@1x.jpg" alt="Toy basket photo">
             </a>
             <a href="#">
               <h1 class="catalog__item-name">Большая корзинка для игрушек</h1>
@@ -61,16 +65,17 @@
             <span class="catalog__item-price">1 500 руб.</span>
             <a class="catalog__item-btn" href="#">buy me</a>
           </article>
-      </section>
+        </section>
       
-      <section class="making">
-        <h2 class="making__name">Процесс производства</h2>
-        <div class="making__video">
-          <img src="http://placehold.it/260x150" alt="Video file of making">
-        </div>
-        <p class="making_text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="making__btn btn" href="#">Сделать заказ</a>
-      </section>
+        <section class="making">
+          <h2 class="making__name">Процесс производства</h2>
+          <video class="making__video" width="260" height="150" poster="img/video-mobile@1x.jpg" src="#">
+            <img src="img/icon-play.svg" alt="Video file of making">
+          </video>
+          <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="making__btn btn" href="#">Сделать заказ</a>
+        </section>
+      </div>
     </main>
     
     <footer class="page-footer">
@@ -95,10 +100,12 @@
         <input class="add__input" type="radio" name="size" value="size-l" id="size-l">
         <label class="add__label" for="size-l">L</label>
         
-        <input class="add_btn btn" type="submit" value="Добавить">
+        <input class="add__btn btn" type="submit" value="Добавить">
       </form>
       
     </section>
+
     
+    <script src="js/script.js"></script>
   </body>
 </html>

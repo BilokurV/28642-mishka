@@ -1,0 +1,82 @@
+.form__text{
+  display: block;
+  padding: 5px 0;
+  font-weight: bold;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.form__type, .form__color{
+  position: relative;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.form__type-input, .form__color-input{
+  display: none;
+}
+
+.form__type-label, .form__color-label{
+  display: inline-block;
+  margin: 15px 10px 20px 65px;
+}
+
+.form__type-label::before {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+.form__type-input:checked + .form__type-label::before {
+  box-shadow: inset 0px 0px 0px 11px #ffffff, inset 0px 0px 0px 20px #62d1ba;
+}
+
+.form__color-label:before{
+  content: '';
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  border: 2px solid #000000;
+  margin-top: -10px;
+
+}
+.form__color-input:checked + .form__color-label:before{
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__name-label{
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+.form__name-input, .form__tel-input, .form__email-input{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-size: 17px;
+  color: #444444;
+}
+
+.form__addition-input{
+  width: 235px;
+  min-height: 120px;
+  padding: 10px;
+  border: 2px solid #000000;
+  font-size: 17px;
+  color: #444444;
+}
+
+.form__text-required{
+  font-size: 14px;
+}
