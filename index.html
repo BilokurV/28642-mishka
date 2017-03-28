@@ -8,27 +8,30 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header wraper">
       <h1 class="visually-hidden">Магазин "Мишка"</h1>
       <div class="page-header__logo">
         <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
       </div>
       <nav class="main-menu  main-menu--closed">
         <button class="main-menu__toggle" type="button">Open menu</button>
-        <div class="main-menu__wrapper">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-menu__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-menu__item  main-menu__item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-menu__item  main-menu__item--basket"><a href="#">Корзина: <span class="main-menu__item--basket-text">пока пуста</span></a></li>
-          </ul>
-        </div>
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-menu__item main-menu__item--knitt"><a href="form.html">Вязание на заказ</a></li>
+          
+          <li class="main-menu__item main-menu__item--new"><a href="#">Новые поступления</a></li>
+          <li class="main-menu__item main-menu__item--sell"><a href="#">Распродажа</a></li>
+          
+          <li class="main-menu__item  main-menu__item--search"><a href="#">Поиск по сайту</a></li>
+          <li class="main-menu__item  main-menu__item--basket"><a href="#">Корзина: <span class="main-menu__item--basket-text">пока пуста</span></a></li>
+        </ul>
+        <span class="main-menu__free">Бесплатная доставка по России</span>
       </nav>
     </header>
     
-    <main class="wraper">
+    <main>
       <section class="showcase">
-        <h1 class="showcase__page-title page-title">Милые штуки ручной<br> работы для дома</h1>
+        <h1 class="page-title showcase__page-title">Милые штуки ручной<br>работы для дома</h1>
         <div class="showcase__list">
           <a class="showcase__item showcase__item--interior" href="#">
             <span>Предметы интерьера</span>
@@ -39,8 +42,10 @@
         </div>
       </section>
       
-      <section class="promo">
-        <h2 class="promo__title">Вязаные корзинки</h2>
+      <div class="wave wave--half"></div>
+      
+      <section class="promo wraper">
+        <h2 class="promo__title title">Вязаные корзинки</h2>
         <span class="promo__name">ТОВАР НЕДЕЛИ</span>
         <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="promo__info">
@@ -62,10 +67,12 @@
         <a class="btn promo__btn" href="#">ЗАКАЗАТЬ</a>      
       </section>
       
-      <div class="wrapper">
+      <div class="wave">
+        <div class="wave__subwave"></div>
+      </div>
       
-      <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
+      <section class="about wraper">
+        <h2 class="about__title title">Коротко о нас:</h2>
         <div class="about__list">
           <ul>
             <li class="about__item  about__item--eco">Экологически чистые материалы</li>
@@ -79,45 +86,56 @@
       </section>
       
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <div class="reviews__list">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <p class="reviews__author">Анастасия Красильникова</p>
-          <a class="reviews__author-mail">@misssssiskras</a>
+        <div class="wraper">
+          <h2 class="reviews__title title">Отзывы</h2>
+          <div class="reviews__list">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <p class="reviews__author">Анастасия Красильникова</p>
+            <a class="reviews__author-mail">@misssssiskras</a>
+          </div>
+          <div class="reviews__arrows">
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <a class="reviews__btn  btn" type="button">Написать</a>
         </div>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
-        <a class="reviews__btn  btn" type="button">Написать</a>
       </section>
       
+      <div class="wave">
+        <div class="wave__subwave"></div>
       </div>
-        
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
+      
+      <section class="contacts wraper">
+        <h2 class="contacts__title title">Контакты</h2>
         <div class="contacts__mail">
-          <span>e-mail:</span>
+          <p>e-mail:</p>
           <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__address">
-          <span>адрес</span>
-          <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          <p>адрес</p>
+          <span>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</span>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523" width="320" height="455" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.286304334932!2d30.323040340197753!3d59.93806332403565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1424780846523" style="border:0" allowfullscreen></iframe>
         </div>
         <a class="contacts_btn btn" href="#">Напишите нам</a>
       </section>
     </main>
     
     <footer class="page-footer">
-      <div class="social">
-        <a class="social__link social__link--inst" href="#">Instogram button</a>
-        <a class="social__link social__link--face" href="#">Facebook button</a>
-        <a class="social__link social__link--twit" href="#">Twitter button</a>
+      <div class="wraper">
+        <div class="page-footer__logo">
+          <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
+        </div>
+        <div class="social">
+          <a class="social__link social__link--inst" href="#">Instogram button</a>
+          <a class="social__link social__link--face" href="#">Facebook button</a>
+          <a class="social__link social__link--twit" href="#">Twitter button</a>
+        </div>
+        <p class="page-footer__copyright">Разработано:
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </p>
       </div>
-      <p class="page-footer__copyright">Разработано:
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
-      </p>      
     </footer>
     
     <section class="popup add">

@@ -1,74 +1,103 @@
-.form__text{
+/* form.less */
+.form__text {
   display: block;
-  padding: 5px 0;
+  padding: 10px 0;
+  padding-right: 30px;
+  font-size: 17px;
   font-weight: bold;
   color: #63d1bb;
   text-transform: uppercase;
 }
-
-.form__type, .form__color{
+.form__text::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #62d1ba;
+  left: 70px;
+  right: 0;
+  z-index: 1;
+  margin-top: 8px;
+}
+.form__field,
+.form__type,
+.form__color .wraper,
+.form__name,
+.form__tel .wraper,
+.form__email .wraper,
+.form__addition{
   position: relative;
+}
+.form__type,
+.form__color {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
 }
+.form__color {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-.form__type-input, .form__color-input{
+.form__type-input,
+.form__color-input {
   display: none;
 }
-
-.form__type-label, .form__color-label{
+.form__type-label,
+.form__color-label {
   display: inline-block;
-  margin: 15px 10px 20px 65px;
+  margin: 10px 10px 20px 65px;
 }
-
 .form__type-label::before {
   content: '';
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 0px;
+  lft: 0px;
+  margin-top: -5px;
+  margin-left: -65px;
   border: 2px solid #000000;
   border-radius: 50%;
 }
 .form__type-input:checked + .form__type-label::before {
   box-shadow: inset 0px 0px 0px 11px #ffffff, inset 0px 0px 0px 20px #62d1ba;
 }
-
-.form__color-label:before{
+.form__color-label:before {
   content: '';
   width: 40px;
   height: 40px;
   position: absolute;
-  left: 0px;
   border: 2px solid #000000;
   margin-top: -10px;
-
+  margin-left: -65px;
 }
-.form__color-input:checked + .form__color-label:before{
+.form__color-input:checked + .form__color-label:before {
   background-image: url(../img/icon-tick.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.form__name-label{
+.form__name-label {
   display: block;
   font-size: 17px;
   font-weight: bold;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0px 0;
 }
-
-.form__name-input, .form__tel-input, .form__email-input{
+.form__name-input,
+.form__tel-input,
+.form__email-input {
   display: block;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px 0 10px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid #000000;
   font-size: 17px;
   color: #444444;
+  background-color: transparent;
 }
-
-.form__addition-input{
+.form__addition-input {
   width: 235px;
   min-height: 120px;
   padding: 10px;
@@ -76,7 +105,83 @@
   font-size: 17px;
   color: #444444;
 }
-
-.form__text-required{
+.form__text-required {
   font-size: 14px;
+}
+.form__btn{
+  width: 100%;
+  background-color: white;
+  margin-bottom: 50px;
+}
+@media(min-width:768px){
+  .form__type,
+  .form__color .wraper,
+  .form__name,
+  .form__tel .wraper,
+  .form__email .wraper,
+  .form__addition{
+    display: flex;
+    flex-direction: row; 
+  }
+  .form__text {
+    display: inline-block;
+    width: 165px;
+    flex-shrink: 0;
+  }
+  .form__text::after {
+    content: none;
+  }
+  .form__field{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  .form__field label{
+    display: inline-block;
+  }
+  .form__field input,
+  .form__addition-input{
+    display: inline-block;
+    width: 300px;
+    flex-grow: 1;
+  }
+  .form__name-label{
+    padding-right: 25px;
+  }
+  .form__type input,
+  .form__color input{
+    display: none;
+  }
+  .form__color-label {
+    width: 150px;
+  }
+  .form__color,
+  .form__tel,
+  .form__email{
+    background-color: #f1f1f1;
+  }
+  .form__btn{
+    width: 230px;
+  }
+  .form__text-required{
+    float: right;
+    margin-top: 10px;
+  }
+}
+@media(min-width:1150px){
+  .form .wraper{
+    width: 700px;
+  }
+  .form__text{
+    position: absolute;
+    left: -115px;
+  }
+  .form__type label{
+    display: inline-block;
+    width: 400px;
+  }  
+  .form__field input,
+  .form__addition-input{
+    width: 550px;
+  }
 }

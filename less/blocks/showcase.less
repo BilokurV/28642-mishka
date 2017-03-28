@@ -1,45 +1,62 @@
+/* showcase.less */
 .showcase{
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.showcase__page-title{
-  padding-bottom: 135px;
+  min-width: 320px;
   background-image: url(../img/hero-mobile@1x.jpg);
-  background-repeat: repeat no-repeat;
-  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
-
-.showcase__list{
+.showcase__page-title {
+  background-color: transparent;
+  padding-bottom: 135px;
+}
+.showcase__list {
   width: 100%;
   margin-top: auto;
-}
-
-.showcase__item{
-  height: 105px;
-  padding-left: 30px;
-  padding-right: 150px;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  
+  flex-wrap: wrap;
+}
+.showcase__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-grow: 1;
+  padding-left: 30px;
+  background-repeat: no-repeat;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
   color: #ffffff;
 }
-
-.showcase__item--interior{
+.showcase__item span{
+  display: inline-block;
+  vertical-align: middle;
+  width: 170px;
+}
+.showcase__item--interior {
   background-color: #63d1bb;
   background-image: url(../img/icon-interior.svg);
   background-position: 87% center;
 }
-
-.showcase__item--toys{
+.showcase__item--toys {
   background-color: #56c3b2;
   background-image: url(../img/icon-toy.svg);
   background-position: 90% center;
+}
+@media(min-width:768px){
+  .showcase{
+    margin-top: -80px;
+  }
+  .showcase__page-title {
+    padding-top: 165px;
+    padding-bottom: 370px;
+  }  
+  .showcase__list {
+    margin: 0 auto;
+    width: 668px;
+  }
+}
+@media(min-width:1150px){
+  .showcase__list {
+    width: 1050px;
+  }
 }

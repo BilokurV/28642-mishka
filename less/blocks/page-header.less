@@ -1,13 +1,21 @@
-.page-header{
+/* page-header.less */
+.page-header {
   position: relative;
-  width: 320px;
-  margin: 0 auto;
 }
-
-.page-header__logo{
+.page-header__logo {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 79px;
-  border-bottom: 1px solid #ececec;
+}
+@media(min-width: 768px){
+  .page-header__logo {
+    justify-content: flex-start;
+  }
+}
+@media(min-width:1150px){
+  .page-header__logo {
+    justify-content: center;
+  }
 }
