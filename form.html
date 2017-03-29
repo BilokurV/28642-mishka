@@ -11,7 +11,13 @@
     <header class="page-header wraper">
       <h1 class="visually-hidden">Магазин "Мишка"</h1>
       <div class="page-header__logo">
-        <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
+        <a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype">
+          </picture>
+        </a>
       </div>
       <nav class="main-menu  main-menu--closed">
         <button class="main-menu__toggle" type="button">Open menu</button>
@@ -124,7 +130,7 @@
     <footer class="page-footer">
       <div class="wraper">
         <div class="page-footer__logo">
-          <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
+          <a><img src="img/logo-footer.svg" width="86" height="35" alt="Logotype"></a>
         </div>
         <div class="social">
           <a class="social__link social__link--inst" href="#">Instogram button</a>

@@ -30,10 +30,10 @@
 @media(min-width: 768px){
   .reviews {
     padding-top: 85px;
-    background-image: url(../img/review@1x.jpg);
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 350px 100%;
+    background-size: 350px auto;
   }
   .reviews__author {
     margin-top: 70px;
@@ -52,6 +52,11 @@
     position: relative;
     left: 485px;
     bottom: 300px;
+  }
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .reviews {
+    background-image: url("../img/review@2x.jpg");
   }
 }
 @media(min-width: 1150px){
