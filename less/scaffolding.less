@@ -1,7 +1,10 @@
+*{
+  outline: 1px solid green;
+}
+/* scaffolding.less */
 body {
   width: 100%;
   margin: 0 auto;
-  
   font-size: 15px;
   line-height: 24px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -13,16 +16,16 @@ img {
   max-width: 100%;
   height: auto;
 }
-a{
+a {
   text-decoration: none;
   color: #000000;
 }
-ul{
+ul {
   padding: 0;
   margin: 0;
 }
-li{
-  list-style: none;  
+li {
+  list-style: none;
 }
 .visually-hidden {
   position: absolute;
@@ -34,17 +37,54 @@ li{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.page-title{
+.page-title {
   text-align: center;
-  padding: 75px 30px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   margin: 0;
   background-color: #f1f1f1;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 27px;
   line-height: 30px;
   font-weight: bold;
+  border-top: 1px solid #ececec;
+
 }
-.btn{
+@media(min-width:768px){
+  .page-title {
+    margin-top: -80px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+@media(min-width:1150px){
+  .page-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+.title{
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #000000;
+}
+@media(min-width:768px){
+  .title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+@media(min-width:1150px){
+  .title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+.btn {
   margin-top: 30px;
   margin-bottom: 30px;
   display: block;
@@ -56,19 +96,24 @@ li{
   font-weight: bold;
   color: #444444;
   text-transform: uppercase;
+  background-color: #fff;
 }
-.wrapper{
-  border-top: 5px solid #ccc;
-  border-bottom: 5px solid #ccc;
-}
-.wraper{
-  width: 320px;
+.wraper {
+  width: 260px;
   margin: 0 auto;
 }
-.popup{
+@media(min-width:768px){
+  .wraper{
+    width: 668px;
+  }  
+}
+@media(min-width:1150px){
+  .wraper{
+    width: 1050px;
+  }
+}
+.popup {
   display: none;
   position: absolute;
   z-index: 10;
 }
-
-

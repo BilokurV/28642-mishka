@@ -1,37 +1,76 @@
-.promo{
-  width: 320px;
-  mrgin: 34px 30px 35px 30px;
+/* promo.less */
+.promo {
+  margin-top: 30px;
+  position: relative;
 }
-
-.promo__title{
-  margin: 0;
-  margin-bottom: 8px;
-  font-size: 25px;
-  font-weight: bold;
-  line-height: 30px;
-  color: #000000;
-}
-
-.promo__name{
+.promo__name {
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: #63d1bb;
 }
-
+.promo__text{
+  display: inline-block;
+  width: 260px;
+  margin-top: 30px;
+}
 .promo__info {
   border-collapse: collapse;
-  width: 100%;
+  width: 260px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
-.promo__info tr{
+.promo__info tr {
   border-bottom: 1px solid #ececec;
 }
-
-.promo__price{
+.promo__price {
+  display: inline-block;
+  width: 260px;
   text-align: center;
   font-size: 17px;
   font-weight: bold;
+}
+@media(min-width: 768px){
+  .promo__name {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .promo__info {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .promo__pic{
+    float: right;
+    width: 335px;
+    height: 400px;
+    margin-top: -280px;
+  }
+  .promo__price,
+  .promo__btn{
+    width: 290px;
+  }
+}
+@media(min-width: 1150px){
+  .promo{
+    margin-top: 120px;
+    width: 870px;
+    padding-left: 180px;
+  }
+  .promo__name{
+    position: absolute;
+    left: 0px;
+  }
+  .promo__pic{
+    width: 525px;
+    height: 635px;
+    margin-top: -430px;
+  }
+  .promo__price{
+    margin-top: 80px;
+  }
 }
