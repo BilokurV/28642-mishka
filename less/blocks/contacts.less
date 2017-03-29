@@ -32,7 +32,7 @@
 }
 @media(min-width:768px){
   .contacts__mail{
-    margin-right: 50px;
+    mrgin-right: 50px;
   }
   .contacts_btn{
     margin: 50px auto;
@@ -40,19 +40,19 @@
 }
 @media(min-width:1150px){
   .contacts{
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 230px;
-    width: 860px;
-    height: 460px;
-    margin-bottom: 100px;
+    align-items: flex-start;
+    padding-left: 180px;
+    height: 560px;
   }
   .contacts__map{
     width: 525px;
     order: 5;
-    margin-left: 0px;
+    align-self: flex-end;
   }
   .contacts__map iframe{
     position: static;
@@ -62,3 +62,19 @@
     margin-left: 0;
   }
 }
+
+.contacts__wraper {
+  width: 260px;
+  margin: 0 auto;
+}
+@media(min-width:768px){
+  .contacts__wraper{
+    width: 668px;
+  }  
+}
+@media(min-width:1150px){
+  .contacts__wraper{
+    width: 1050px;
+  }
+}
+
