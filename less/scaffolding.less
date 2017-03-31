@@ -1,6 +1,6 @@
-/**{
+*{
   outline: 1px solid green;
-}*/
+}
 /* scaffolding.less */
 body {
   width: 100%;
@@ -48,16 +48,37 @@ li {
   line-height: 30px;
   font-weight: bold;
   border-top: 1px solid #ececec;
-
 }
 @media(min-width:768px){
   .page-title {
+    position: relative;
+    z-index: -1;
     margin-top: -80px;
     font-size: 43px;
     line-height: 50px;
     padding-top: 100px;
     padding-bottom: 70px;
   }
+.page-title::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  right: 0px;
+  height: 10px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 10px, white 1px);
+}
+.page-title::before{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 6px;
+  right: 0px;
+  height: 10px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 30px 14px, white 10px, transparent 1px);
+}
 }
 @media(min-width:1150px){
   .page-title {
@@ -97,6 +118,14 @@ li {
   color: #444444;
   text-transform: uppercase;
   background-color: #fff;
+  cursor: pointer;
+}
+.btn:hover{
+  color: #ffffff;
+  background-color: #444444;
+}
+.btn:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 .wraper {
   width: 260px;
@@ -111,9 +140,4 @@ li {
   .wraper{
     width: 1050px;
   }
-}
-.popup {
-  display: none;
-  position: absolute;
-  z-index: 10;
 }

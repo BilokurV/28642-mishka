@@ -16,6 +16,7 @@
   line-height: 20px;
   color: #000000;
   background-repeat: no-repeat;
+  background-size: auto;
 }
 .about__item--eco {
   background-image: url(../img/icon-feature-1.svg);
@@ -40,8 +41,18 @@
     column-count: 2;
   }
 }
+
+.about__wraper {
+  width: 260px;
+  margin: 0 auto;
+}
+@media(min-width:768px){
+  .about__wraper{
+    width: 668px;
+  }  
+}
 @media(min-width:1150px){
-  .about{
+  .about__wraper{
     width: 700px;
   }
 }

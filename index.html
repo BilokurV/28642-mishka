@@ -48,62 +48,60 @@
         </div>
       </section>
       
-      <div class="wave wave--half"></div>
-      
-      <section class="promo wraper">
-        <h2 class="promo__title title">Вязаные корзинки</h2>
-        <span class="promo__name">ТОВАР НЕДЕЛИ</span>
-        <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="promo__info">
-          <tr>
-            <td>Цвет:</td>
-            <td>«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <picture>
-          <source media="(min-width: 1150px)"
-                  srcset="img/triple-set-desktop@2x.jpg 2x, 
-                          img/triple-set-desktop@1x.jpg 1x">
-          <source media="(min-width: 768px)"
-                  srcset="img/triple-set-tablet@2x.jpg 2x,
-                          img/triple-set-tablet@1x.jpg 1x">
-          <source media="(min-width: 320px)"
-                  srcset="img/triple-set-mobile@2x.jpg 2x,
-                          img/triple-set-mobile@1x.jpg 1x">
-          <img class="promo__pic" src="img/triple-set-mobile@1x.jpg" alt="Promo photo">
-        </picture>
-        <p class="promo__price">Цена: 990 руб.</p>
-        <a class="btn promo__btn" href="#">ЗАКАЗАТЬ</a>
+      <section class="promo">
+        <div class="promo__wraper">
+          <h2 class="promo__title title">Вязаные корзинки</h2>
+          <span class="promo__name">ТОВАР НЕДЕЛИ</span>
+          <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="promo__info">
+            <tr>
+              <td>Цвет:</td>
+              <td>«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+          <picture>
+            <source media="(min-width: 1150px)"
+                    srcset="img/triple-set-desktop@2x.jpg 2x, 
+                            img/triple-set-desktop@1x.jpg 1x">
+            <source media="(min-width: 768px)"
+                    srcset="img/triple-set-tablet@2x.jpg 2x,
+                            img/triple-set-tablet@1x.jpg 1x">
+            <source media="(min-width: 320px)"
+                    srcset="img/triple-set-mobile@2x.jpg 2x,
+                            img/triple-set-mobile@1x.jpg 1x">
+            <img class="promo__pic" src="img/triple-set-mobile@1x.jpg" alt="Promo photo">
+          </picture>
+          <p class="promo__price">Цена: 990 руб.</p>
+          <a class="btn promo__btn" href="#">ЗАКАЗАТЬ</a>
+        </div>
       </section>
       
-      <!--<div class="wave">
-        <div class="wave__subwave"></div>
-      </div>-->
-      
-      <section class="about wraper">
-        <h2 class="about__title title">Коротко о нас:</h2>
-        <div class="about__list">
-          <ul>
-            <li class="about__item  about__item--eco">Экологически чистые материалы</li>
-            <li class="about__item  about__item--price">Скандинавский стиль по российской цене</li>
-            <li class="about__item  about__item--like">Увеличивает лайки на фотографиях</li>
-            <li class="about__item  about__item--hand">Связано вручную с любовью и умилением</li>
-            <li class="about__item  about__item--cheer">Поддержка отечественного производителя</li>
-            <li class="about__item  about__item--box">Поставляется в подарочной упаковке</li>
-          </ul>
-        </div>        
+      <section class="about">
+        <div class="about__wraper">
+          <h2 class="about__title title">Коротко о нас:</h2>
+          <div class="about__list">
+            <ul>
+              <li class="about__item about__item--eco">Экологически чистые материалы</li>
+              <li class="about__item about__item--price">Скандинавский стиль по российской цене</li>
+              <li class="about__item about__item--like">Увеличивает лайки на фотографиях</li>
+              <li class="about__item about__item--hand">Связано вручную с любовью и умилением</li>
+              <li class="about__item about__item--cheer">Поддержка отечественного производителя</li>
+              <li class="about__item about__item--box">Поставляется в подарочной упаковке</li>
+            </ul>
+          </div>
+        </div>
       </section>
       
       <section class="reviews">
-        <div class="wraper">
+        <div class="reviews__wraper">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__list">
             <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -111,16 +109,12 @@
             <a class="reviews__author-mail">@misssssiskras</a>
           </div>
           <div class="reviews__arrows">
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__arrow reviews__arrow__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__arrow reviews__arrow__next" type="button">Следующий отзыв</button>
           </div>
           <a class="reviews__btn  btn" type="button">Написать</a>
         </div>
       </section>
-      
-      <div class="wave">
-        <div class="wave__subwave"></div>
-      </div>
       
       <section class="contacts contacts__wraper">
         <h2 class="contacts__title title">Контакты</h2>
@@ -145,7 +139,7 @@
           <a><img src="img/logo-footer.svg" width="86" height="35" alt="Logotype"></a>
         </div>
         <div class="social">
-          <a class="social__link social__link--inst" href="#">Instogram button</a>
+          <a class="social__link social__link--inst" href="#">Instagram button</a>
           <a class="social__link social__link--face" href="#">Facebook button</a>
           <a class="social__link social__link--twit" href="#">Twitter button</a>
         </div>
@@ -156,6 +150,7 @@
     </footer>
     
     <section class="popup add">
+      <div class="add__overlay"></div>
       <h2 class="add__title">Добавить в корзину</h2>
       <form class="add__size" method="get" action="https://echo.htmlacademy.ru/">
         <p class="add__size-text">Выберите размер:</p>

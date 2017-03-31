@@ -23,6 +23,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.social__link:hover{
+  opacity: 0.6;
+}
+.social__link:active{
+  opacity: 0.3;
+}
 .social__link--inst {
   background-image: url(../img/icon-insta.svg);
 }
@@ -35,15 +41,29 @@
 .page-footer__copyright {
   font-size: 19px;
   font-weight: bold;
+  cursor: pointer;
+}
+.page-footer__copyright:active {
+  opacity: 0.3;
 }
 .page-footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
   background-image: url(../img/htmlacademy.svg);
 }
+.page-footer__copyright:hover > .page-footer__copyright-link{
+  background-image: url(../img/htmlacademy-hover.svg);
+}
+
 @media(min-width:768px){
   .page-footer__logo{
     display: inline-block;
+  }
+  .page-footer__logo:hover{
+    opacity: 0.6;
+  }
+  .page-footer__logo:active{
+    opacity: 0.3;
   }
   .page-footer__wraper{
     flex-direction: row;
