@@ -1,6 +1,10 @@
 /* contacts.less */
 .contacts{
   padding-top: 50px;
+  position: relative;
+}
+.contacts__flag{
+  display: none;
 }
 .contacts p{
   display: inline-block;
@@ -46,6 +50,12 @@
   }
 }
 @media(min-width:768px){
+  .contacts__flag{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }  
   .contacts__mail{
     margin-right: 150px;
   }
@@ -73,6 +83,11 @@
     align-items: flex-start;
     padding-left: 180px;
     height: 560px;
+  }
+  .contacts__flag{
+    right: auto;
+    left: 50px;
+    top: 100px;
   }
  .contacts__mail{
     margin-right: 0px;
