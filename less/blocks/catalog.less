@@ -12,7 +12,8 @@
 }
 .catalog__item-name {
   margin-top: 0;
-  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 25px;
   padding-left: 30px;
   font-size: 17px;
   font-weight: bold;
@@ -27,13 +28,14 @@
 .catalog__item-description {
   display: block;
   margin: 0 30px;
+  
   font-size: 13px;
   line-height: 30px;
 }
 .catalog__item-price {
   display: inline-block;
   width: 210px;
-  margin: 25px 0 30px 30px;
+  margin: 40px 0 30px 30px;
   font-size: 15px;
   font-weight: bold;
   border-top: 1px solid #ededed;
@@ -41,8 +43,8 @@
 .catalog__item-btn {
   display: inline-block;
   position: absolute;
-  right: 0px;
-  margin-top: 10px;
+  right: 5px;
+  margin-top: 20px;
   width: 60px;
   height: 60px;
   font-size: 0;
@@ -56,10 +58,15 @@
 .catalog__item-btn:active {
   background-image: url(../img/icon-cart-active.svg);
 }
+
 @media(min-width:768px){
+  .catalog{
+    margin-top: 80px;
+  }
   .catalog__item{
     display: flex;
     flex-direction: row;
+    margin-bottom: 55px;
   }
   .catalog__item-pic{
     width: 330px;
@@ -75,9 +82,22 @@
     flex-direction: column;
     flex-grow: 1;
   }
+  .catalog__item-name{
+    font-size: 20px;
+    line-height: 26px;
+    width: 240px;
+  }
+  .catalog__item-description{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 5px;
+  }  
   .catalog__item-price {
     width: 270px;
     margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    font-size: 17px;
   }
   .catalog__item-btn {
     bottom: 10px;
@@ -88,17 +108,38 @@
   .catalog{
     display: flex;
     justify-content: space-between;
+    margin-top: 97px;
   }
   .catalog__item{
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+  }
+  .catalog__item-desc{
+    height: 190px;
+  }
+  .catalog__item-name{
+    padding-top: 20px;
+    padding-left: 25px;
   }
   .catalog__item-pic{
     width: 315px;
     height: 470px;
   }
+  .catalog__item-description{
+    margin-left: 25px;
+  }
   .catalog__item-price {
-    width: 260px;
-    margin-top: 40px;
+    width: 160px;
+    margin-top: auto;
+    margin-bottom: 25px;
+    margin-left: 25px;
   }
 }
+
+
+
+
+
+
+
+

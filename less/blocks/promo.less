@@ -1,7 +1,7 @@
 /* promo.less */
 .promo {
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 35px;
   position: relative;
 }
 .promo__name {
@@ -13,16 +13,20 @@
 .promo__text{
   display: inline-block;
   width: 260px;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 .promo__info {
   border-collapse: collapse;
   width: 260px;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-bottom: 30px;
 }
 .promo__info tr {
   border-bottom: 1px solid #ececec;
+  line-height: 38px;
+}
+.promo__info td:first-child{
+  width: 95px;
 }
 .promo__price {
   display: inline-block;
@@ -30,8 +34,13 @@
   text-align: center;
   font-size: 17px;
   font-weight: bold;
+  margin-bottom: 0;
 }
+
 @media(min-width: 768px){
+  .promo{
+    margin-top: 20px;
+  }  
 .promo::after{
   content: "";
   position: absolute;
@@ -40,7 +49,7 @@
   right: 0px;
   height: 10px;
   background-size: 40px 20px;
-  background-image: radial-gradient(circle at 10px -5px, transparent 10px, black 10px, black 12px, transparent 1px);
+  background-image: radial-gradient(circle at 10px -5px, transparent 10px, #f1f1f1 10px, #f1f1f1 12px, transparent 1px);
 }
 .promo::before{
   content: "";
@@ -50,44 +59,78 @@
   right: 0px;
   height: 10px;
   background-size: 40px 20px;
-  background-image: radial-gradient(circle at 30px 14px, transparent 10px, black 10px, black 12px, transparent 1px);
+  background-image: radial-gradient(circle at 30px 14px, transparent 10px, #f1f1f1 10px, #f1f1f1 12px, transparent 1px);
 }
+  .promo__title{
+    margin-left: -3px;
+  }
   .promo__name {
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     width: 100px;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 12px;
+    top: 9px;
   }
+  .promo__text{
+    margin-top: 50px;
+    width: 300px;
+    font-size: 17px;
+    line-height: 30px;
+  }  
   .promo__info {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 16px;
+    margin-bottom: 35px;
   }
   .promo__pic{
     float: right;
     width: 335px;
     height: 400px;
-    margin-top: -280px;
+    margin-top: -271px;
   }
+  .promo__price{
+    font-size: 20px;
+  }
+  .promo__btn{
+    margin-top: 35px;
+  }  
   .promo__price,
   .promo__btn{
     width: 290px;
   }
 }
 @media(min-width: 1150px){
+  .promo{
+    margin-top: 70px;
+    
+  }
+  .promo__title{
+    margin-top: 30px;
+    margin-left: -10px;
+  }
   .promo__name{
     position: absolute;
-    left: 0px;
+    left: 30px;
+  }
+  .promo__text{
+    margin-left: -6px;
+  }
+  .promo__info{
+    margin-left: -6px;
+    margin-top: 30px;
   }
   .promo__pic{
     width: 525px;
     height: 635px;
-    margin-top: -400px;
+    margin-top: -455px;
   }
   .promo__price{
-    margin-top: 80px;
+    margin-top: 70px;
+  }
+  .promo__btn{
+    margin-left: -5px;
+    margin-bottom: 50px;
   }
 }
 .promo__wraper {
