@@ -1,21 +1,42 @@
 /* page-header.less */
 .page-header {
+  min-width: 320px;
   position: relative;
+  z-index: 5;
 }
 .page-header__logo {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 79px;
+  height: 80px;
 }
+.page-header__logo img{
+  width: 86px;
+}
+.page-header__logo a[href]:hover{
+  opacity: 0.6;
+}
+.page-header__logo a[href]:active{
+  opacity: 0.3;
+}
+
 @media(min-width: 768px){
   .page-header__logo {
     justify-content: flex-start;
+    margin-top: 3px;
+    margin-left: -3px;
+  }
+  .page-header__logo img{
+    width: 113px;
+    margin-top: 10px;
   }
 }
 @media(min-width:1150px){
   .page-header__logo {
-    justify-content: center;
+    justify-content: center;  
+  }
+  .page-header__logo img{
+    width: 149px;    
   }
 }

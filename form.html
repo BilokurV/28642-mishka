@@ -11,7 +11,13 @@
     <header class="page-header wraper">
       <h1 class="visually-hidden">Магазин "Мишка"</h1>
       <div class="page-header__logo">
-        <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Logotype">
+          </picture>
+        </a>
       </div>
       <nav class="main-menu  main-menu--closed">
         <button class="main-menu__toggle" type="button">Open menu</button>
@@ -29,10 +35,8 @@
       </nav>
     </header>
     
-    <main class="form">
+    <main>
       <h1 class="page-title">Вязание на заказ</h1>
-
-      <div class="wave wave--half"></div>
 
       <section class="order">
         <p class="order__text wraper">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -122,12 +126,12 @@
     </main>
     
     <footer class="page-footer">
-      <div class="wraper">
+      <div class="page-footer__wraper">
         <div class="page-footer__logo">
-          <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Logotype"></a>
+          <a href="index.html"><img src="img/logo-footer.svg" width="86" height="35" alt="Logotype"></a>
         </div>
         <div class="social">
-          <a class="social__link social__link--inst" href="#">Instogram button</a>
+          <a class="social__link social__link--inst" href="#">Instagram button</a>
           <a class="social__link social__link--face" href="#">Facebook button</a>
           <a class="social__link social__link--twit" href="#">Twitter button</a>
         </div>
@@ -138,6 +142,7 @@
     </footer>
     
     <section class="popup add">
+      <div class="add__overlay"></div>
       <h2 class="add__title">Добавить в корзину</h2>
       <form class="add__size" method="get" action="https://echo.htmlacademy.ru/">
         <p class="add__size-text">Выберите размер:</p>
