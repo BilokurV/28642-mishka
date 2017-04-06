@@ -34,6 +34,7 @@
 }
 .catalog__item-price {
   display: inline-block;
+  vertical-align: baseline;
   width: 210px;
   margin: 40px 0 30px 30px;
   font-size: 15px;
@@ -42,6 +43,7 @@
 }
 .catalog__item-btn {
   display: inline-block;
+  vertical-align: baseline;
   position: absolute;
   right: 5px;
   margin-top: 20px;
@@ -108,6 +110,7 @@
   .catalog{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 97px;
   }
   .catalog__item{
@@ -116,10 +119,13 @@
   }
   .catalog__item-desc{
     height: 190px;
+    overflow: hidden;
   }
   .catalog__item-name{
     padding-top: 20px;
     padding-left: 25px;
+    max-height: 80px;
+    overflow: hidden;
   }
   .catalog__item-pic{
     width: 315px;
@@ -127,6 +133,8 @@
   }
   .catalog__item-description{
     margin-left: 25px;
+    max-height: 80px;
+    overflow: hidden;
   }
   .catalog__item-price {
     width: 160px;

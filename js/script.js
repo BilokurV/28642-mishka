@@ -2,6 +2,8 @@
 var navMain = document.querySelector('.main-menu');
 var navToggle = document.querySelector('.main-menu__toggle');
     
+navMain.classList.remove('main-menu--no-js');
+
 navToggle.addEventListener('click', function() 
 	{
 	if (navMain.classList.contains('main-menu--closed')) 
